@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let value = "Erdem";
+        let valueType = typeof (value);
+
+        if (valueType == "number") {
+            if (value < 0) {
+                document.write("Daha büyük bir değer giriniz.");
+            } else if (value >= 0 && value <= 5) {
+                document.write("Iyi Geceler");
+            } else if (value > 5 && value <= 9) {
+                document.write("Günaydin");
+            } else if (value > 9 && value <= 16) {
+                document.write("Iyi Günler");
+            } else if (value > 16 && value <= 23) {
+                document.write("Iyi Akşamlar")
+            } else if (value > 23) {
+                document.write("Deger çok büyük");
+            }
+        } else {
+            document.write("Hata!");
+        }
+
+    </script>
+</body>
+
+</html>

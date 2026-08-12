@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function Ornek1(A1, A2) {
+            function Ornek2(B1, B2, B3, B4, B5) {
+                function Ornek3(C1, C2, C3) {
+                    let sum = A1 + A2 + B1 + B2 + B3 + B4 + B5 + C1 + C2 + C3;
+                    return sum;
+                }
+                return Ornek3;
+            }
+            return Ornek2;
+        }
+
+        let result = Ornek1(8, 12)(5, 3, 6, 15, 20)(18, 32, 24);
+        document.write(result);
+
+
+    </script>
+</body>
+
+</html>

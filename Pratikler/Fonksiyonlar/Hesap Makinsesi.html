@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function Process(value1, value2, islem) {
+            switch (islem) {
+                case "+":
+                    return Toplama(value1, value2);
+                case "-":
+                    return Cikarma(value1, value2);
+                case "*":
+                    return Carpma(value1, value2);
+                case "/":
+                    return Bölme(value1, value2);
+                default:
+                    return "Geçersiz işlem!";
+            }
+        }
+        console.log(Process(40, 20, "+"));
+        console.log(Process(40, 20, "-"));
+        console.log(Process(40, 20, "*"));
+        console.log(Process(40, 20, "/"));
+
+
+        function Toplama(value1, value2,) {
+            let topla = value1 + value2;
+            return topla;
+        }
+
+        function Cikarma(value1, value2,) {
+            let cikar = value1 - value2;
+            return cikar;
+        }
+
+        function Carpma(value1, value2,) {
+            let carp = value1 * value2;
+            return carp
+        }
+
+        function Bölme(value1, value2,) {
+            let böl = value1 / value2;
+            return böl;
+
+        }
+    </script>
+</body>
+
+</html>

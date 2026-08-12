@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let value = 5;
+        let valueType = typeof (value);
+
+        switch (true) {
+            case valueType != "number":
+                document.write("Değer Mutlaka Bir Sayi Olmalidir.");
+                break;
+
+            case value < 0 || value > 23:
+                document.write("Değer 0 ila 23 arasinda olmalidir.");
+                break;
+
+            case value >= 0 && value <= 23:
+                switch (true) {
+                    case value >= 0 && value <= 5:
+                        document.write("İyi Geceler.");
+                        break;
+                }
+                break;
+
+            default:
+                document.write("Hata!");
+
+        }
+
+
+    </script>
+</body>
+
+</html>

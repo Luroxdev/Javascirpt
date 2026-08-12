@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <form action="">
+        <label for="saat">Saati Giriniz:</label>
+        <input type="text" name="saat" id="saat" placeholder="saat" required>
+        <button onclick="al()">Al</button>
+        <br /> <br />
+    </form>
+
+    <script type="text/javascript">
+        function al() {
+            let clock = Number(document.getElementById("saat").value);
+
+            if (clock <= 0) {
+                document.write("Değer çok küçüktür. Değer 0 ila 23 arasinda olmalidir.");
+            } else if (clock >= 0 && clock <= 5) {
+                document.write("İyi Geceler");
+            } else if (clock > 5 && clock <= 9) {
+                document.write("Günaydin");
+            } else if (clock > 9 && clock <= 16) {
+                document.write("İyi Günler");
+            } else if (clock > 16 && clock <= 23) {
+                document.write("İyi Akşamlar");
+            } else if (clock > 23) {
+                document.write("Değeri Çok Büyük.");
+            } else {
+                document.write("Hata");
+            }
+        }
+    </script>
+</body>
+
+</html>

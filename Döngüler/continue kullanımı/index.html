@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let value = 1;
+
+        while (value <= 10) {
+            if (value > 3 && value < 8) {
+                value++;
+                continue;
+            }
+
+            document.write(value + "<br/>");
+            value++;
+        }
+    </script>
+</body>
+
+</html>

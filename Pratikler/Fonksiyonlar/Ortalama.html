@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        (function Average(...Values) {
+            let total = 0;
+            let result;
+
+            for (let number = 0; number < Values.length; number++) {
+                total += Values[number];
+
+                result = total / Values.length;
+            }
+            console.log(result);
+        })(12, 67, 57, 589);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        (function Ornek1(A1, A2) {
+            function Ornek2(B1, B2) {
+                function Ornek3(C1, C2) {
+                    document.write(C1 + " " + C2);
+                }
+                return Ornek3(B1, B2);
+            }
+            return Ornek2(A1, A2);
+
+        })("Erdem", "Barut");
+    </script>
+</body>
+
+</html>

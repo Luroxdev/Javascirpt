@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        (function sifreKontrol(sifre) {
+            if (sifre < 8) {
+                document.write("En az 8 karakter olmalidir");
+                return;
+            }
+
+            let buyukHarf = false;
+            let kucukHarf = false;
+            let rakam = false;
+
+            for (let i = 0; i < sifre.length; i++) {
+
+                let karakter = sifre[i];
+
+                if (karakter >= "A" && karakter <= "Z") {
+                    buyukHarf = true;
+                }
+
+                if (karakter >= "a" && karakter <= "z") {
+                    kucukHarf = true;
+                }
+
+                if (karakter >= "0" && karakter <= "9") {
+                    rakam = true;
+                }
+            }
+
+            if (!buyukHarf) {
+                document.write("En az bir büyük harf olmalidir.");
+            }
+            else if (!kucukHarf) {
+                document.write("En az bir küçük harf olmalidir.");
+            }
+            else if (!rakam) {
+                document.write("En az bir rakam olmalidir.");
+            }
+            else {
+                document.write("Güçlü Şifre");
+            }
+
+        })("ErdemzBarut12345");
+    </script>
+</body>
+
+</html>

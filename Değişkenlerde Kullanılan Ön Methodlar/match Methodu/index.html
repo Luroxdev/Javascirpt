@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let value = "Erdem Barut'a erdembarut1641@gmail.com Mail Adresi Üzerinden Erişebilirsiniz.";
+        document.write(value + "<br/>");
+        let result = value.match(/[A-Z0-9a-z_.-]+@[A-Z0-9a-z\-]+\.[A-Za-z]{2,3}/gi); //eposta filtremelek için
+        document.write(result);
+    </script>
+</body>
+
+</html>

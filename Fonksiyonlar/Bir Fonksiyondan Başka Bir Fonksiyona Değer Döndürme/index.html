@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function Calculate(gelenMiktar, gelenParaBirimi, gelenDovizKuru) {
+            let result = gelenMiktar + "TL: " + (gelenMiktar / gelenDovizKuru) + " " + gelenParaBirimi;
+            document.write(result);
+        }
+
+        function Ornek(miktar, paraBirimi) {
+            let dovizKuru;
+
+            if (paraBirimi == "USD") {
+                dovizKuru = 30;
+            } else if (paraBirimi == "EUR") {
+                dovizKuru = 35;
+            } else if (paraBirimi == "GBP") {
+                dovizKuru = 40;
+            } else {
+                return "Hata!";
+            }
+            return Calculate(miktar, paraBirimi, dovizKuru);
+        }
+
+        Ornek(300, "USD")
+    </script>
+</body>
+
+</html>

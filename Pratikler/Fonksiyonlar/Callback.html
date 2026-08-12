@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function Process(value1, value2, islem) {
+            islem(value1, value2, function (result) {
+                console.log(result);
+            })
+        }
+        Process(40, 20, Toplama);
+        Process(40, 20, Cikarma);
+        Process(40, 20, Carpma);
+
+
+        function Toplama(value1, value2, result) {
+            let topla = value1 + value2;
+            result(topla);
+        }
+
+        function Cikarma(value1, value2, result) {
+            let cikar = value1 - value2;
+            result(cikar);
+        }
+
+        function Carpma(value1, value2, result) {
+            let carp = value1 * value2;
+            result(carp);
+        }
+    </script>
+</body>
+
+</html>

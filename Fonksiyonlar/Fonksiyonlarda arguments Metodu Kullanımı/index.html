@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function Ornek() {
+            let ElemanSayisi = arguments.length;
+
+            for (let value = 0; value < ElemanSayisi; value++) {
+                document.write(arguments[value] + " ");
+            }
+        }
+        Ornek("Benim", "Adim", "Erdem", "Barut");
+    </script>
+</body>
+
+</html>

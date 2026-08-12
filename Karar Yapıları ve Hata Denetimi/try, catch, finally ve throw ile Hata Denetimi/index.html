@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let value1 = "Merhaba";
+        let value2 = "Selam";
+        let value3 = "Javascript";
+
+        try { // Hata oluşabilcek olan kod blokları için kullanılır
+            document.write(value1 + "<br/>");
+            document.write(result + "<br/>");
+            document.write(value2 + "<br/>");
+            throw ("Hata...!");
+        }
+        catch (errorValue) { // Hata olursa çalışacak kod blokları ayrıca hata oluşursa ilgili varsayılan hata iletisi catch methoduna belirtilicek olan parametreye otomatik olarak depolanır
+            document.write(errorValue + "<br/>");
+        }
+        finally { // Hata denetiminden bağımsız olarak hep çalışan kod blokları buraya yazılır.
+            document.write(value3);
+        }
+
+    </script>
+</body>
+
+</html>

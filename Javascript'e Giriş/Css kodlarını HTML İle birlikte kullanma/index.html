@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Merhaba</span>
+
+    <script type="text/javascript">
+
+        function Ornek(Deger){
+            var Eleman = document.createElement("style");
+            Eleman.type = "text/css";
+                if(Eleman.styleSheet){
+                    Eleman.styleSheet.cssText = Deger;
+                }
+                else{
+                    Eleman.appendChild(document.createTextNode(Deger))
+                }
+            document.getElementsByTagName("head")[0].appendChild(Eleman);
+        }
+
+        var Icerik = "span { display:inline-block; border:3px double black; margin:5px; padding:5px; }"
+
+            window.onload = function(){
+                Ornek(Icerik);
+            }
+
+
+    </script>
+</body>
+</html>
