@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let colors = new Array("Beyaz", "Gri", "Füme", "Lacivert", "Bordo");
+
+        // let key = 0;
+        let uzunluk = colors.length;
+
+        /*while (key < uzunluk) {
+            document.write(colors[key] + "<br/>");
+
+            key++;
+        }*/
+
+        /*do {
+            document.write(colors[key] + "<br/>");
+            key++;
+        } while (key < uzunluk);*/
+
+        /*for (let key = 0; key < colors.length; key++) {
+            document.write(colors[key] + "<br/>");
+        }*/
+
+        /*for (let key in colors) {
+            document.write(colors[key] + "<br/>");
+        }*/
+
+        for (let key of colors) {
+            document.write(key + "<br/>");
+        }
+
+
+    </script>
+</body>
+
+</html>

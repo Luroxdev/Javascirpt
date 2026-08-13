@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let langs = ["Javascipt", "C++", ["React", "ASP.NET", "Node.js"], "Python", "C#", "Swift"];
+        document.write(langs + "<br/><br/>");
+
+        for (let result1 in langs) {
+            if (Array.isArray(langs[result1])) {
+                for (let result2 in langs[result1]) {
+                    document.write(langs[result1][result2] + "<br/>");
+                }
+
+            } else {
+                document.write(langs[result1] + "<br/>");
+            }
+        }
+    </script>
+</body>
+
+</html>

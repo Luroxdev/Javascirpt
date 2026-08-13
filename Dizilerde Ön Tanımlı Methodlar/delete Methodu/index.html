@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let colors = ["Siyah", "Beyaz", "Turkuaz", "Gri"];
+        document.write(colors + "<br/>");
+        delete colors[1];
+        document.write(colors + "<br/>");
+        document.write(colors.length + "<br>");
+        document.write(colors[1] + "<br/><br/");
+
+        for (let result in colors) {
+            document.write(colors[result] + "<br/>");
+        }
+    </script>
+</body>
+
+</html>

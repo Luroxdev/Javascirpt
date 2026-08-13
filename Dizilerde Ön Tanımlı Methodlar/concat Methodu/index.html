@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let items1 = ["Masa", "Sandalye", "Hali", "Vitrin"];
+        document.write(items1 + "<br/>");
+
+        let items2 = ["Televizyon", ["Radyo", "Telefon"]];
+        document.write(items2 + "<br/>");
+
+        let items3 = ["Ayna", "Bardak"];
+        document.write(items3 + "<br/><br/>");
+
+        let result = items1.concat(items2[1][0], items3);
+        document.write(result);
+        console.log(result);
+    </script>
+</body>
+
+</html>
