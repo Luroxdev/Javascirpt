@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function Analiz(n) {
+            let tam = Number.isInteger(n);
+            let durum = Math.abs(n);
+            let mutlak = Math.abs(n);
+            let kareKök = Math.sqrt(n);
+
+            if (n != tam) {
+                console.log("Tam Sayi: Evet");
+            } else {
+                console.log("Tam Sayi: Hayir");
+            }
+
+            if (n == durum) {
+                console.log("Durum: Pozitif");
+            } else {
+                console.log("Durum: Negatif");
+            }
+
+            if (n % 2 == 0) {
+                console.log("Çift/Tek: Çift");
+            } else {
+                console.log("Çift/Tek: Tek");
+            }
+
+            console.log("Mutlak Değer: " + mutlak);
+            console.log("Kare Kök: " + kareKök);
+
+        }
+
+        Analiz(25);
+    </script>
+</body>
+
+</html>

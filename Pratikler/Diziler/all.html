@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let sayilar = [12, 5, 8, 21, 30, 17, 42, 9];
+
+        function All(sayilar) {
+            let value1 = sayilar.reduce((value1, sayi) => {
+                return value1 + sayi;
+            });
+            let average = value1 / sayilar.length;
+
+            let value2 = sayilar.reduce((value2, sayi) => {
+                return value2 + sayi;
+            });
+            let total = value2;
+
+            let maxNumber = sayilar[0];
+            for (let i = 1; i < sayilar.length; i++) {
+                if (sayilar[i] > maxNumber) {
+                    maxNumber = sayilar[i];
+                }
+            }
+
+            let minNumber = sayilar[0];
+
+            for (let i = 1; i < sayilar.length; i++) {
+                if (sayilar[i] < minNumber) {
+                    minNumber = sayilar[i];
+                }
+            }
+
+            for (let i = 0; i < sayilar.length; i++) {
+                if (sayilar[i] % 2 == 0) {
+
+                }
+            }
+
+            function Cift() {
+                return sayilar.filter(function (sayi) {
+                    return sayi % 2 == 0;
+                });
+            }
+
+            console.log(All(sayilar));
+            console.log(Cift());
+
+
+
+            return [total, average, maxNumber, minNumber,];
+        }
+
+        All(sayilar);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

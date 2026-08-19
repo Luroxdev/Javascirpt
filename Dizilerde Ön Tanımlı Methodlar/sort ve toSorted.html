@@ -15,8 +15,14 @@
     </style>
 
     <script type="text/javascript">
-        let fruits = ["Apple", "Pineapple", "Melon"];
-        document.write(fruits.at(-3));     
+        function Ornek(value1, value2) {
+            return value1 - value2;
+        }
+
+        let numbers = [2, 12, 100, 44, 53, 8, 55, 75, 10.12];
+        document.write(numbers + "<br/>");
+        numbers.sort(Ornek);
+        document.write(numbers);
     </script>
 </body>
 

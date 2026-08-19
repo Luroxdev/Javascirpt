@@ -15,8 +15,14 @@
     </style>
 
     <script type="text/javascript">
-        let fruits = ["Apple", "Pineapple", "Melon"];
-        document.write(fruits.at(-3));     
+        function Ornek(value, index, reference) {
+            return value > 50;
+        }
+
+        let numbers = [3, 5, 8, 10, 18, 24, 34, 48, 55, 71, 83, 100];
+        document.write(numbers + "<br/>");
+        let result = numbers.findIndex(Ornek);
+        document.write(result);
     </script>
 </body>
 

@@ -15,8 +15,15 @@
     </style>
 
     <script type="text/javascript">
-        let fruits = ["Apple", "Pineapple", "Melon"];
-        document.write(fruits.at(-3));     
+        function Ornek(elementValue, indexValue, referenceValue) {
+            result += elementValue + indexValue + "<br/>";
+        }
+
+        let numbers = [3, 5, 8, 10];
+        document.write(numbers + "<br/>");
+        let result = "";
+        numbers.forEach(Ornek);
+        document.write(result);
     </script>
 </body>
 

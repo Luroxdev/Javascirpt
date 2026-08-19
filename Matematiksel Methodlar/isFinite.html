@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let value1 = 1980;
+        let value2 = Number.MAX_VALUE * 2;
+        let value3 = (- Number.MAX_VALUE) * 2;
+
+        let result1 = Number.isFinite(value1);
+        let result2 = Number.isFinite(value2);
+        let result3 = Number.isFinite(value3);
+
+        document.write(result1 + "<br/>");
+        document.write(result2 + "<br/>");
+        document.write(result3);
+    </script>
+</body>
+
+</html>

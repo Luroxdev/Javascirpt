@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script typ="text/javascript">
+        function Ornek(elementValue, elementIndex, elementReference) {
+            return elementValue > 50;
+
+        }
+
+        let Rakamlar = [3, 5, 8, 10, 18, 24, 34, 48, 55, 71, 83, 100];
+        document.write(Rakamlar + "<br/>");
+
+        let result = Rakamlar.find(Ornek);
+        document.write(result);
+    </script>
+</body>
+
+</html>

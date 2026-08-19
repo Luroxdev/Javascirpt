@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script typ="text/javascript">
+        let sayilar = [1, 2, 3, 4];
+
+
+        function Process(sayilar, callback) {
+            return sayilar.map(callback);
+        }
+
+        const kareAl = (sayi) => {
+            return sayi ** 2;
+        };
+
+        const kupAl = (sayi) => {
+            return sayi ** 3;
+        };
+
+        console.log(Process(sayilar, kareAl));
+        console.log(Process(sayilar, kupAl));
+
+    </script>
+</body>
+
+</html>
