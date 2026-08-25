@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function AnalizEt() {
+            let number = Math.random() * 100;
+            number = Number(number.toFixed(2));
+
+            console.log("Üretilen: ", number);
+
+            let tamSayi = Math.trunc(number);
+
+            if (tamSayi % 2 === 0) {
+                console.log("Tam kismi çift");
+            } else {
+                console.log("Tam kismi tek");
+            }
+
+            console.log("Karesi: ", number ** 2);
+
+            console.log("Kökü: ", Math.sqrt(number));
+
+            console.log("Mutlak Değeri: ", Math.abs(number));
+
+            console.log("Yuvarlama: ", Math.round(number));
+        }
+
+        AnalizEt();
+    </script>
+</body>
+
+</html>

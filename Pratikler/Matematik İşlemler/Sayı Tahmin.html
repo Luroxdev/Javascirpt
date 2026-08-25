@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function TahminOyunu() {
+            let number = Math.floor(Math.random() * 100) + 1;
+            let tahminSayisi = 0;
+
+            console.log("Oyun başladi!");
+            console.log("Gizli sayi:", number);
+
+            while (true) {
+                let tahmin = Number(prompt("1-100 arasinda bir sayi giriniz:"));
+
+                console.log("Tahmin:", tahmin);
+
+                if (tahmin <= 0 || tahmin > 100 || isNaN(tahmin)) {
+                    console.log("Geçersiz sayi!");
+                    continue;
+                }
+
+                tahminSayisi++;
+
+                if (tahmin < number) {
+                    console.log("Daha büyük sayi gir.");
+                }
+                else if (tahmin > number) {
+                    console.log("Daha küçük sayi gir.");
+                }
+                else {
+                    console.log("Tebrikler!");
+                    console.log(tahminSayisi + " denemede bildiniz.");
+                    break;
+                }
+            }
+        }
+
+        TahminOyunu();
+
+    </script>
+</body>
+
+</html>
