@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        class Kullanici {
+            constructor(ad, yas) {
+                this.ad = "Erdem";
+                this.yas = 16;
+            }
+
+            get Yas() {
+                return this.yas;
+            }
+
+            set Yas(yeniYas) {
+                if (yeniYas > 0 && yeniYas < 150) {
+                    this.yas = yeniYas;
+                } else {
+                    return;
+                }
+            }
+
+        }
+
+        let kisi = new Kullanici();
+
+        kisi.yas = 17;
+
+        console.log(kisi.ad);
+        console.log(kisi.yas);
+    </script>
+</body>
+
+</html>

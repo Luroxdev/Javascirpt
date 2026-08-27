@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        let urunler = [
+            {
+                ad: "Laptop",
+                fiyat: 40000
+            },
+            {
+                ad: "Telefon",
+                fiyat: 25000
+            },
+            {
+                ad: "Klavye",
+                fiyat: 1500
+            }
+
+        ];
+
+        for (let urun of urunler) {
+            console.log(urun.ad, urun.fiyat);
+        }
+
+        let pahaliUrunler = urunler.filter(function (urun) {
+            return urun.fiyat > 20000;
+        });
+
+        console.log(pahaliUrunler);
+
+    </script>
+</body>
+
+</html>

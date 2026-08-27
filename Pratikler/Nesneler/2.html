@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        let hesap = {
+            sayi1: 20,
+            sayi2: 10,
+
+            toplam: function Procces1() {
+                let sum = this.sayi1 + this.sayi2;
+                return sum;
+            },
+
+            cikar: function Procces2() {
+                let minus = this.sayi1 - this.sayi2;
+                return minus;
+            }
+
+        };
+
+        let result1 = hesap.toplam();
+        let result2 = hesap.cikar();
+
+        console.log(result1);
+        console.log(result2);
+
+    </script>
+</body>
+
+</html>

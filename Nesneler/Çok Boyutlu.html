@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        let kisi = {
+            Ad: "Erdem",
+            Soyad: "Barut",
+            Bilgiler: {
+                DTarihi: 2009,
+                Ulke: "TÜrkiye",
+                Egitimler: {
+                    one: "Javascript",
+                    two: "React",
+                    three: "Node.js",
+                    four: "Typescript"
+                }
+            }
+        };
+
+        console.log(kisi.Ad);
+        console.log(kisi.Soyad);
+        console.log(kisi.Bilgiler.DTarihi);
+        console.log(kisi.Bilgiler.Ulke);
+        console.log(kisi.Bilgiler.Egitimler.one);
+        console.log(kisi.Bilgiler.Egitimler.two);
+        console.log(kisi.Bilgiler.Egitimler.three);
+        console.log(kisi.Bilgiler.Egitimler.four);
+    </script>
+</body>
+
+</html>

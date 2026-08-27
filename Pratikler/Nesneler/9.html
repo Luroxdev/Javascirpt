@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        class BankaHesabi {
+            constructor(musteriAdi, bakiye) {
+                this.musteriAdi = musteriAdi;
+                this.bakiye = bakiye;
+            }
+
+            set bakiye(deger) {
+                if (deger < 0) {
+                    return;
+                }
+
+                this._bakiye = deger;
+            }
+
+            get bakiye() {
+                return this._bakiye;
+            }
+
+            paraYatir(miktar) {
+                this.bakiye = this.bakiye + miktar;
+            }
+
+            paraCek(miktar) {
+                if (this.bakiye >= miktar) {
+                    this.bakiye = this.bakiye - miktar;
+                }
+            }
+
+            bilgiGoster() {
+                console.log("Müşteri Adi:", this.musteriAdi);
+                console.log("Bakiye:", this.bakiye);
+            }
+        }
+
+        let hesap = new BankaHesabi("Erdem", 5000);
+
+        hesap.bilgiGoster();
+
+        hesap.paraYatir(2000);
+        hesap.bilgiGoster();
+
+        hesap.paraCek(2000);
+        hesap.bilgiGoster();
+    </script>
+</body>
+
+</html>

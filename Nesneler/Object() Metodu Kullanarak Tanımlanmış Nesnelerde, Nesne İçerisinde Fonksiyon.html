@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        let kisi = new Object();
+        kisi.Ad = "Erdem";
+        kisi.Soyad = "Barut";
+
+        kisi.Bilgi = function (DTarihi, Ulke) {
+            let icerik = `${this.Ad} ${this.Soyad} ${DTarihi} ${Ulke}`;
+            return icerik;
+        };
+
+        let result = kisi.Bilgi(2009, "Türkiye");
+
+        console.log(result);
+
+    </script>
+</body>
+
+</html>

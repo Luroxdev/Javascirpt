@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        let araba = {
+            marka: "BMW",
+            model: "M4",
+            yil: 2025,
+
+            bilgiVer: function () {
+                let result = `${this.marka} ${this.model} - ${this.yil}`;
+                return result;
+            }
+        };
+
+        let value = araba.bilgiVer();
+        console.log(value);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        class Ornek {
+            constructor(AdValue) {
+                this.Ad = AdValue;
+            }
+
+            get KisiAdi() {
+                return this.Ad;
+            }
+
+            set KisiAdi(yeniAdValue) {
+                if (yeniAdValue.length < 5) {
+                    return;
+                } else {
+                    this.Ad = yeniAdValue;
+                }
+
+            }
+        }
+
+        let kisi = new Ornek("Erdem");
+        console.log(kisi.KisiAdi);
+        kisi.KisiAdi = "Hakan";
+        console.log(kisi.KisiAdi)
+    </script>
+</body>
+
+</html>

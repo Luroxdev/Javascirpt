@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        let zaman = new Date();
+        console.log(zaman.toLocaleString("tr-TR"));
+        console.log(zaman.toLocaleString("en-US"));
+        // console.log(zaman.toLocaleString("tr-TR", { dateStyle: "full" }));
+        // console.log(zaman.toLocaleString("tr-TR", { dateStyle: "long" }));
+        // console.log(zaman.toLocaleString("tr-TR", { dateStyle: "medium" }));
+        // console.log(zaman.toLocaleString("tr-TR", { dateStyle: "short" }));
+
+        // console.log(zaman.toLocaleString("tr-TR", { hour12: true }));
+        // console.log(zaman.toLocaleString("tr-TR", { hour12: false }));
+
+        // console.log(zaman.toLocaleString("tr-TR", { hourCycle: "h11" }));
+        // console.log(zaman.toLocaleString("tr-TR", { hourCycle: "h23" }));
+
+        // console.log(zaman.toLocaleString("tr-TR", { weekday: "long" }));
+        // console.log(zaman.toLocaleString("tr-TR", { weekday: "short" }));
+        // console.log(zaman.toLocaleString("tr-TR", { weekday: "narrow" }));
+
+        // console.log(zaman.toLocaleString("tr-TR", { year: "2-digit" }));
+        // console.log(zaman.toLocaleString("tr-TR", { year: "numeric" }));
+
+        // console.log(zaman.toLocaleString("tr-TR", { month: "2-digit" }));
+        // console.log(zaman.toLocaleString("tr-TR", { month: "long" }));
+        // console.log(zaman.toLocaleString("tr-TR", { month: "narrow" }));
+        // console.log(zaman.toLocaleString("tr-TR", { month: "numeric" }));
+        // console.log(zaman.toLocaleString("tr-TR", { month: "short" }));
+
+        // console.log(zaman.toLocaleString("tr-TR", { hour: "2-digit" }));
+        // console.log(zaman.toLocaleString("tr-TR", { hour: "numeric" }));
+
+        // console.log(zaman.toLocaleString("tr-TR", { seconds: "2-digit" }));
+        // console.log(zaman.toLocaleString("tr-TR", { seconds: "numeric" }));
+
+        console.log(zaman.toLocaleString("tr-TR", { TimeZoneName: "long" }));
+        console.log(zaman.toLocaleString("tr-TR", { TimeZoneName: "short" }));
+    </script>
+</body>
+
+</html>

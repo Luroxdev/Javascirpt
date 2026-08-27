@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        class One {
+            constructor(AdValue, SoyadValue, DTarihiValue, UlkeValue) {
+                this.Ad = AdValue;
+                this.Soyad = SoyadValue;
+                this.DTarihi = DTarihiValue;
+                this.Ulke = UlkeValue;
+
+                this.Bilgiler2 = `${this.Dil1} ${this.Dil2} ${this.Dil3} ${this.Dil4}`;
+            }
+
+            Diller(Dil1Value, Dil2Value, Dil3Value, Dil4Value) {
+                this.Dil1 = Dil1Value;
+                this.Dil2 = Dil2Value;
+                this.Dil3 = Dil3Value;
+                this.Dil4 = Dil4Value;
+            }
+        }
+
+        class Two extends One {
+            constructor(A1, A2, A3, A4, B1, B2, B3, B4) {
+                super(A1, A2, A3, A4, B1, B2, B3, B4);
+                this.Bilgiler1 = `${this.Ad} ${this.Soyad} ${this.DTarihi} ${this.Ulke}`;
+                super.Diller(B1, B2, B3, B4);
+                this.Bilgiler2 = `${this.Dil1} ${this.Dil2} ${this.Dil3} ${this.Dil4}`;
+            }
+        }
+
+        let kisi = new Two("Erdem", "Barut", 2009, "Türkiye", "Javascript", "React", "Node.js", "TypeScript");
+        let result1 = kisi.Bilgiler1;
+        let result2 = kisi.Bilgiler2;
+
+        console.log(result1);
+        console.log(result2);
+    </script>
+</body>
+
+</html>

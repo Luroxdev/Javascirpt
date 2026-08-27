@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        class Hayvan {
+            constructor(isim, yas) {
+                this.isim = isim;
+                this.yas = yas;
+            }
+
+            setCikar(kediSes) {
+                this.Ses1 = kediSes;
+            }
+
+        }
+
+        class Kedi extends Hayvan {
+            constructor(isim, yas, tuyRengi, ses) {
+                super(isim, yas);
+                this.tuyRengi = tuyRengi;
+                this.Bilgiler1 = `${this.isim} ${this.yas} ${this.tuyRengi}`;
+                super.setCikar(ses);
+                this.Bilgiler2 = this.Ses1;
+            }
+        }
+
+        let kedi = new Kedi("Pamuk", 2, "Mavi", "Miyav");
+        kedi.Bilgiler1;
+        kedi.Bilgiler2;
+        console.log(kedi.Bilgiler1);
+        console.log(kedi.Bilgiler2);
+    </script>
+</body>
+
+</html>
