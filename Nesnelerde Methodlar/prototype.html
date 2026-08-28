@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        class Ornek {
+            constructor() {
+                this.Ad = "Erdem";
+                this.Soyad = "Barut";
+            }
+        }
+
+        Ornek.prototype.Bilgi = function () {
+            this.Yas = 17;
+            this.Ulke = "Türkiye";
+        }
+
+        let kisi = new Ornek();
+        kisi.Bilgi();
+        let icerik = `${kisi.Ad} ${kisi.Soyad} ${kisi.Yas} ${kisi.Ulke}`;
+        console.log(icerik);
+    </script>
+</body>
+
+</html>

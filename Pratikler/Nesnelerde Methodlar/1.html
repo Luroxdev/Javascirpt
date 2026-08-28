@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #FFF;
+        }
+    </style>
+
+    <script>
+        let kullanici = {
+            ad: "Erdem",
+            yas: 17,
+            meslek: "Yazilimci",
+            sehir: "Bursa"
+        };
+
+        let ekBilgiler = {
+            ulke: "Türkiye",
+            yas: 18
+        };
+
+        class Ogrenci {
+            constructor(ad) {
+                this.ad = ad;
+            }
+        }
+        let ogrenci = new Ogrenci();
+
+        let key = Object.keys(kullanici);
+        let value = Object.values(kullanici);
+        let entries = Object.entries(kullanici);
+        let control = Object.hasOwn(kullanici, "email");
+        let mail = kullanici?.email;
+        delete kullanici.meslek;
+        let newValue = Object.assign(kullanici, ekBilgiler);
+        let newValue2 = ogrenci instanceof Ogrenci;
+
+        console.log("Keys:", key);
+        console.log("Values:", value);
+        console.log("Entries:", entries);
+        console.log("Email var mi:", mail);
+        console.log("Meslek silindikten sonra:", kullanici);
+        console.log("Assign sonrasi:", kullanici);
+        console.log("Ogrenci instanceof Ogrenci:", newValue2);
+    </script>
+</body>
+
+</html>
