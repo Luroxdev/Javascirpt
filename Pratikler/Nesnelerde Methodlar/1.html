@@ -41,13 +41,13 @@
         let control = Object.hasOwn(kullanici, "email");
         let mail = kullanici?.email;
         delete kullanici.meslek;
-        let newValue = Object.assign(kullanici, ekBilgiler);
+        let newValue = Object.assign({}, kullanici, ekBilgiler);
         let newValue2 = ogrenci instanceof Ogrenci;
 
         console.log("Keys:", key);
         console.log("Values:", value);
         console.log("Entries:", entries);
-        console.log("Email var mi:", mail);
+        console.log("Email var mi:", control);
         console.log("Meslek silindikten sonra:", kullanici);
         console.log("Assign sonrasi:", kullanici);
         console.log("Ogrenci instanceof Ogrenci:", newValue2);
