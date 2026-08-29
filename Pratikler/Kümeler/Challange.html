@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        let sayilar = new Set([12, 5, 8, 12, 3, 5, 19, 8, 21, 3, 7]);
+
+        let result1 = sayilar.size;
+        console.log("Eleman: " + result1);
+
+        sayilar.forEach(function (sayi) {
+            console.log(sayi);
+        });
+
+        let arananSayi = 19;
+
+        if (sayilar.has(arananSayi)) {
+            console.log("Aranan sayi bulundu");
+            sayilar.delete(arananSayi);
+            console.log(sayilar);
+        } else {
+            console.log("Aranan sayi bulunamadi");
+        }
+
+        sayilar.clear();
+
+        console.log("Eleman sayisi: ", sayilar.size);
+
+
+    </script>
+</body>
+
+</html>
