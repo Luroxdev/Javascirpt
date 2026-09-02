@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>Herhangi biryere tiklayin</div>
+    <div id="Eleman"></div>
+    <script>
+        function Ornek() {
+            document.getElementById("Eleman").innerHTML += "Full-Stack Developer";
+            document.removeEventListener("click", Ornek);
+        }
+
+        document.addEventListener("click", Ornek);
+    </script>
+</body>
+
+</html>

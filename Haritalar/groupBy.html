@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #1C1C28;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        let Urunler = [
+            { Kategori: "Meyve", Isim: "Elma" },
+            { Kategori: "Meyve", Isim: "Muz" },
+            { Kategori: "Sebze", Isim: "Ispanak" },
+            { Kategori: "Meyve", Isim: "Portokal" },
+            { Kategori: "Sebze", Isim: "Pirasa" }
+        ];
+
+        function Gruplama({ Kategori }) {
+            return Kategori == "Meyve" ? "Meyveler" : "Sebzeler";
+        }
+
+        // let result = Map.groupBy(Urunler, Gruplama);
+        // console.log(result);
+
+        // document.write(result.get("Meyveler")[0]["Isim"] + "<br/>");
+        // document.write(result.get("Meyveler")[1]["Isim"] + "<br/>");
+        // document.write(result.get("Meyveler")[2]["Isim"] + "<br/>");
+        // document.write(result.get("Sebzeler")[0]["Isim"] + "<br/>");
+        // document.write(result.get("Sebzeler")[1]["Isim"] + "<br/>");
+
+        const result = Map.groupBy(Urunler, urun => {
+            return urun.Kategori;
+        });
+
+        console.log(result);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="metin">Birinci</p>
+    <p class="metin">İkinci</p>
+    <p class="metin">Üçüncü</p>
+
+    <script>
+        let icerik = document.getElementsByClassName("metin").length;
+
+        for (value = 0; value < icerik; value++) {
+            document.getElementsByClassName("metin")[0].innerHTML = "Değiştirildi 1";
+            document.getElementsByClassName("metin")[1].innerHTML = "Değiştirildi 2";
+            document.getElementsByClassName("metin")[2].innerHTML = "Değiştirildi 3";
+        }
+    </script>
+</body>
+
+</html>

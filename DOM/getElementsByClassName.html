@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .Meyveler {
+            color: teal;
+        }
+
+        .Sebzeler {
+            color: lightslategray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li class="Meyveler">Muz</li>
+        <li class="Sebzeler">Salata</li>
+    </ul>
+
+    <div>Meyveler sayisi: <span id="value1"></span></div>
+    <div>Sebzeler sayisi: <span id="value2"></span></div>
+
+    <script>
+        let result1 = document.getElementsByClassName("Meyveler").length;
+        document.getElementById("value1").innerHTML = result1;
+
+        let result2 = document.getElementsByClassName("Sebzeler").length;
+        document.getElementById("value2").innerHTML = result2;
+    </script>
+</body>
+
+</html>

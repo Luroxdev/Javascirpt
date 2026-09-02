@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>Not: 0: html, 1: head, 2: meta, 3: title, 4: body, 5: div, 6: ul, 7: li, 8: li, 9: li, 10: div, 11: span, 12:
+        div, 13: span, 14: div, 15: span, 16: script</div>
+    <ul>
+        <li>Elma</li>
+        <li>Armut</li>
+        <li>Portakal</li>
+    </ul>
+
+    <div>7 Sira numarali elemanin içeriği: <span id="value1"></span> </div>
+    <div>X Sira numarali elemanin içeriği: <span id="value2"></span> </div>
+    <div>X Sira numarali elemanin içeriği: <span id="value3"></span> </div>
+
+    <script>
+        let result1 = document.getElementsByTagName("*")[7].innerHTML;
+        document.getElementById("value1").innerHTML = result1;
+    </script>
+</body>
+
+</html>

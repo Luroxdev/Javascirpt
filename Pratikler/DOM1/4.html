@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="kullanici">
+    <input type="text" name="kullanici">
+    <input type="text" name="kullanici">
+
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>JavaScript</p>
+
+    <script>
+        let kullanicilar = document.getElementsByName("kullanici");
+
+        for (let i = 0; i < kullanicilar.length; i++) {
+            kullanicilar[i].value = "Erdem";
+        }
+
+        let paragraflar = document.getElementsByTagName("p");
+
+        for (let i = 0; i < paragraflar.length; i++) {
+            paragraflar[i].textContent = "Değiştirildi";
+        }
+    </script>
+</body>
+
+</html>

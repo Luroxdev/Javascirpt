@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="liste"></div>
+
+    <script>
+        let element1 = document.createElement("li");
+        let element2 = document.createElement("li");
+        let element3 = document.createElement("li");
+
+        let icerik1 = document.createTextNode("HTML");
+        let icerik2 = document.createTextNode("CSS");
+        let icerik3 = document.createTextNode("Javascript");
+
+        element1.appendChild(icerik1);
+        element2.appendChild(icerik2);
+        element3.appendChild(icerik3);
+
+        document.getElementById("liste").appendChild(element1);
+        document.getElementById("liste").appendChild(element2);
+        document.getElementById("liste").appendChild(element3);
+    </script>
+</body>
+
+</html>
