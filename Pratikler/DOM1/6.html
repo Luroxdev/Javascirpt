@@ -13,12 +13,15 @@
     <button id="kaldir">Event'i Kaldir</button>
 
     <script>
-        function tikla() {
-            document.getElementById("sonuc").innerHTML = "Butona basildi";
-            document.removeEventListener("click", tikla);
-        }
+        let buton = document.getElementById("buton");
+        let kaldir = document.getElementById("kaldir");
 
-        document.addEventListener("click", tikla);
+
+
+        buton.addEventListener("click", tikla);
+        kaldir.addEventListener("click", function () {
+            buton.removeEventListener("click", tikla)
+        });
 
     </script>
 </body>
