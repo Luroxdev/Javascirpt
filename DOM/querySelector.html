@@ -8,17 +8,15 @@
 </head>
 
 <body>
-    <div>Merhaba Javascript</div>
-    <div>Benim Adim Erdem Barut</div>
-    <div>
-        <p>Erdem Barut</p>
-    </div>
+    <div name="ElementName">Merhaba Javascript</div>
+    <div id="ElementId">Benim Adim Erdem</div>
+    <div class="ElementClass">Javascript Kodlamayi Öğreniyorum</div>
     <br>
-    <div id="secondElement"></div>
+    <div id="Element"></div>
 
     <script>
-        let result = document.querySelector("div > p").innerHTML;
-        document.getElementById("secondElement").innerHTML = result;
+        let result = document.querySelector("div[class]").innerHTML;
+        document.getElementById("Element").innerHTML = result;
     </script>
 </body>
 
